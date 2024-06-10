@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainWindow">
+        <h1>Tic Tac Toe</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="modeSelectionPage" style="display: none;">
+        <h1>Choose Mode</h1>
+        <button id="playerVsPlayerButton">Player vs Player</button>
+        <button id="playerVsComputerButton">Player vs Computer</button>
+    </div>
+
+    <div id="gamePage" style="display: none;">
+        <div id="game">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p id="popupMessage"></p>
+            <button id="popupRestartButton">Restart Game</button>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="click.mp3"></audio>
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="drawSound" src="draw.mp3"></audio>
+    <audio id="madeByPopupSound" src="madeby.wav"></audio>
+
+    <div id="madeByPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p>Made By ANSH</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+<marquee scrollamount="2" direction="center"><img src="video.gif"</marquee>
+</body>
+</html>
